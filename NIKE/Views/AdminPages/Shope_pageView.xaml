@@ -4,11 +4,73 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NIKE.Views.AdminPages"
+      xmlns:material="http://materialdesigninxaml.net/winfx/xaml/themes"
       mc:Ignorable="d" 
-      d:DesignHeight="750" d:DesignWidth="1100" 
+      d:DesignHeight="750" d:DesignWidth="1100" Background="Black"
       Title="Shope_pageView">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" ></RowDefinition>
+            <RowDefinition Height="65" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="25" ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" ></ColumnDefinition>
+                <ColumnDefinition Width="80" ></ColumnDefinition>
+                <ColumnDefinition Width="550" ></ColumnDefinition>
+                <ColumnDefinition Width="120" ></ColumnDefinition>
+                <ColumnDefinition Width="80" ></ColumnDefinition>
+                <ColumnDefinition Width="100" ></ColumnDefinition>
+                <ColumnDefinition Width="100" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="pack://application:,,,/NIKE;component/Pictures/Jordan-Logo-White-Download@zeevector.png" 
+               Grid.Row="1" Grid.Column="0" Width="60" Height="25"/>
+
+            <Image Source="pack://application:,,,/NIKE;component/Pictures/Jordan-Logo-White-Download@zeevector.png" 
+               Grid.Row="1" Grid.Column="1" Width="60" Height="25"/>
+            
+            <Button Grid.Row="0" Grid.Column="6" Width="100" Height="23" 
+                    FontFamily="Montserrat" Content="Sing in" FontSize="14"
+                    Background="Black" Foreground="White" Style="{DynamicResource MaterialDesignFlatButton}">
+            </Button>
+
+            <Button Grid.Row="0" Grid.Column="5" Width="100" Height="23" 
+                    FontFamily="Montserrat" Content="Join us" FontSize="14"
+                    Background="Black" Foreground="White" Style="{DynamicResource MaterialDesignFlatButton}">
+            </Button>
+
+            <Button Grid.Row="0" Grid.Column="4" Width="80" Height="23" 
+                    FontFamily="Montserrat" Content="Help" FontSize="14"
+                    Background="Black" Foreground="White" Style="{DynamicResource MaterialDesignFlatButton}">
+            </Button>
+
+            <Button Grid.Row="0" Grid.Column="3" Width="100" Height="23" 
+                    FontFamily="Montserrat" Content="Fing a Store" FontSize="14"
+                    Background="Black" Foreground="White" Style="{DynamicResource MaterialDesignFlatButton}">
+            </Button>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120" ></ColumnDefinition>
+                <ColumnDefinition Width="180" ></ColumnDefinition>
+                <ColumnDefinition Width="100" ></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="pack://application:,,,/NIKE;component/Pictures/images.png" 
+               Grid.Row="1" Grid.Column="0" Width="100" Height="65"/>
+
+        </Grid> 
+
+        <Grid Grid.Row="2" Grid.Column="0">
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="0">
+        </Grid>
     </Grid>
 </Page>
